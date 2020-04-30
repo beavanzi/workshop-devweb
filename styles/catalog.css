@@ -30,7 +30,7 @@ body .content .container .title {
   /* display: flex; */
   /* align-items: center; */
   text-transform: capitalize;
-  font-feature-settings: "fina" on, "liga" off;
+  font-feature-settings: "fina"on, "liga"off;
   margin-bottom: -30px;
 
   color: #d02746;
@@ -48,24 +48,40 @@ body .content .container .sub-title {
   /* display: flex; */
   /* align-items: center; */
   text-transform: capitalize;
-  font-feature-settings: "fina" on, "liga" off;
+  font-feature-settings: "fina"on, "liga"off;
   color: #996f6f;
 
   text-shadow: -1px 0.6px 0px #fbad86;
 }
 
-body .content .container .content-container h1 {
+body .content .container .header {
+  display: inline-flex;
+}
+
+body .content .container .header .title {
+  text-align: center;
+}
+
+body .content .container .header .sub-title {
+  text-align: center;
+}
+
+body .content .container .header .catalog {
   font-family: Cookie;
   display: flex;
   text-align: center;
-  justify-content: center;
   font-size: 90px;
+  color: #4b0a34;
+  text-shadow: -3px 1px 0px #c979ad;
 }
 
 body .content .container .content-container h2 {
   font-family: Cookie;
   font-size: 40px;
   margin-left: 40px;
+  color: #4b0a34;
+  text-shadow: -3px 1px 0px #c979ad;
+  text-decoration: underline;
 }
 
 body .content .container .content-container .card-wrap {
