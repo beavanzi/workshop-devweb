@@ -24,3 +24,7 @@ body .menu .menu-text {
   color: #ffffff;
   padding: 38px 0 38px 0;
 }
+
+body .menu .menu-text:hover {
+  color: #feecd6;
+}

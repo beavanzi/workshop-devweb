@@ -1,25 +1,16 @@
 body .content {
   padding-left: 160px;
   display: flex;
-  /* height: 100%; */
   background-color: #feecd6;
 }
 
 body .content .container {
   background-color: rgba(51, 143, 142, 0.15);
-  /* align-self: center; */
   width: 80%;
   height: 100%;
   margin: 0 auto;
   box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
 }
-
-/* body .content .container .container-background {
-  display: flex;s
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-} */
 
 body .content .container .title {
   font-family: "Cookie";
@@ -27,14 +18,10 @@ body .content .container .title {
   font-style: normal;
   font-weight: normal;
   line-height: 90px;
-  /* display: flex; */
-  /* align-items: center; */
   text-transform: capitalize;
-  font-feature-settings: "fina"on, "liga"off;
+  font-feature-settings: "fina" on, "liga" off;
   margin-bottom: -30px;
-
   color: #d02746;
-
   text-shadow: -1.7px 1px 0px #fbad86;
 }
 
@@ -45,10 +32,8 @@ body .content .container .sub-title {
   font-style: normal;
   font-weight: normal;
   line-height: 5px;
-  /* display: flex; */
-  /* align-items: center; */
   text-transform: capitalize;
-  font-feature-settings: "fina"on, "liga"off;
+  font-feature-settings: "fina" on, "liga" off;
   color: #996f6f;
 
   text-shadow: -1px 0.6px 0px #fbad86;
@@ -56,6 +41,7 @@ body .content .container .sub-title {
 
 body .content .container .header {
   display: inline-flex;
+  margin: 3px 0px 20px 30px;
 }
 
 body .content .container .header .title {
@@ -66,56 +52,63 @@ body .content .container .header .sub-title {
   text-align: center;
 }
 
-body .content .container .header .catalog {
+body .content .container .catalog {
   font-family: Cookie;
   display: flex;
   text-align: center;
+  justify-content: center;
   font-size: 90px;
   color: #4b0a34;
-  text-shadow: -3px 1px 0px #c979ad;
+  text-shadow: -3px 1px 0px rgba(208, 39, 70, 0.6);
+  margin-bottom: -51px;
+}
+body .content .container .catalog-content .catalog-titles {
+  background-color: #d02746;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 2px 20px;
+  margin: 60px 0px 20px 40px;
+  position: relative;
+  top: 44px;
 }
 
-body .content .container .content-container h2 {
+body .content .container .catalog-content h2 {
   font-family: Cookie;
   font-size: 40px;
-  margin-left: 40px;
-  color: #4b0a34;
-  text-shadow: -3px 1px 0px #c979ad;
-  text-decoration: underline;
+  color: #feecd6;
+  position: initial;
 }
 
-body .content .container .content-container .card-wrap {
+/* c979ad cor roxinha */
+
+body .content .container .catalog-content .card-wrap {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  border: 2px solid #d02746;
+  margin: 0px 20px 6px;
+  padding: 20px 0px;
+  border-radius: 8px;
+  background-color: rgba(251, 173, 134, 0.4);
 }
 
-body .content .container .content-container .card-wrap .card {
+body .content .container .catalog-content .card-wrap .card {
   background-color: rgba(51, 143, 142, 0.8);
-  margin: 20px 20px;
+  margin: 20px 10px;
   border-radius: 15px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 }
 
-body .content .container .content-container .card-wrap .card p {
-  margin: 10px;
+body .content .container .catalog-content .card-wrap .card p {
+  margin: 10px 10px 10px 13px;
   font-family: Lobster Two;
+  color: #feecd6;
 }
 
-body .content .container .content-container .card-wrap .card img {
+body .content .container .catalog-content .card-wrap .card img {
   width: 200px;
   height: 300px;
   margin: 5px;
   padding: 20px;
+  border-radius: 23px;
 }
-
-/* body .content .container .logo {
-  position: relative;
-} */
-
-/* body .content .container .logo .title,
-body .content .container .logo .sub-title {
-  position: absolute;
-  transform: translate(-50%, 0%);
-  left: 50%;
-} */
