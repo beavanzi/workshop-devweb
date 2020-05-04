@@ -1,13 +1,13 @@
 body .content {
   padding-left: 160px;
   display: flex;
-  height: 100%;
+  /* height: 100%; */
   background-color: #feecd6;
 }
 
 body .content .container {
   background-color: rgba(51, 143, 142, 0.15);
-  align-self: center;
+  /* align-self: center; */
   width: 80%;
   height: 100%;
   margin: 0 auto;
@@ -34,7 +34,7 @@ body .content .container .title {
   align-items: center;
   text-align: center;
   text-transform: capitalize;
-  font-feature-settings: "fina" on, "liga" off;
+  font-feature-settings: "fina"on, "liga"off;
   margin-bottom: -30px;
   color: #d02746;
   text-shadow: -5px 3px 0px #fbad86;
@@ -52,7 +52,7 @@ body .content .container .sub-title {
   align-items: center;
   text-align: center;
   text-transform: capitalize;
-  font-feature-settings: "fina" on, "liga" off;
+  font-feature-settings: "fina"on, "liga"off;
   color: #996f6f;
   text-shadow: -3px 2px 0px #fbad86;
 }
@@ -167,16 +167,71 @@ body .content .container .card {
   opacity: 1;
 }
 
-*:target ~ .item-1 {
+*:target~.item-1 {
   opacity: 0;
 }
 
-#item-1:target ~ .item-1 {
+#item-1:target~.item-1 {
   opacity: 1;
 }
 
-#item-2:target ~ .item-2,
-#item-3:target ~ .item-3 {
+#item-2:target~.item-2,
+#item-3:target~.item-3 {
   z-index: 3;
   opacity: 1;
+}
+
+body .content .container .contact .contact-title {
+  background-color: #d02746;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 2px 20px;
+  margin: 0px 90px 10px 20px;
+  position: relative;
+  bottom: 30px;
+}
+
+body .content .container .contact h2 {
+  font-family: Cookie;
+  font-size: 40px;
+  color: #feecd6;
+  position: initial;
+}
+
+body .content .container .contact {
+  width: 75%;
+  border: 2px solid #d02746;
+  border-radius: 8px;
+  background-color: rgba(251, 173, 134, 0.4);
+  margin: auto;
+  margin-top: 140px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+body .content .container .contact .contact1 {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  position: relative;
+  bottom: 20px;
+  font-family: Lobster Two;
+  font-size: 20px;
+}
+
+body .content .container .contact p {
+  padding-right: 5px;
+  color: #4b0a34;
+}
+
+body .content .container .contact .contact2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 20px;
+  font-family: Lobster Two;
+  font-size: 18px;
 }

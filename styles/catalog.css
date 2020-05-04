@@ -19,7 +19,7 @@ body .content .container .title {
   font-weight: normal;
   line-height: 90px;
   text-transform: capitalize;
-  font-feature-settings: "fina" on, "liga" off;
+  font-feature-settings: "fina"on, "liga"off;
   margin-bottom: -30px;
   color: #d02746;
   text-shadow: -1.7px 1px 0px #fbad86;
@@ -33,7 +33,7 @@ body .content .container .sub-title {
   font-weight: normal;
   line-height: 5px;
   text-transform: capitalize;
-  font-feature-settings: "fina" on, "liga" off;
+  font-feature-settings: "fina"on, "liga"off;
   color: #996f6f;
 
   text-shadow: -1px 0.6px 0px #fbad86;
@@ -62,6 +62,7 @@ body .content .container .catalog {
   text-shadow: -3px 1px 0px rgba(208, 39, 70, 0.6);
   margin-bottom: -51px;
 }
+
 body .content .container .catalog-content .catalog-titles {
   background-color: #d02746;
   border-radius: 12px;
@@ -79,7 +80,7 @@ body .content .container .catalog-content h2 {
   position: initial;
 }
 
-/* c979ad cor roxinha */
+
 
 body .content .container .catalog-content .card-wrap {
   display: flex;
@@ -111,4 +112,59 @@ body .content .container .catalog-content .card-wrap .card img {
   margin: 5px;
   padding: 20px;
   border-radius: 23px;
+}
+
+body .content .container .contact .contact-title {
+  background-color: #d02746;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 2px 20px;
+  margin: 0px 90px 10px 20px;
+  position: relative;
+  bottom: 30px;
+}
+
+body .content .container .contact h2 {
+  font-family: Cookie;
+  font-size: 40px;
+  color: #feecd6;
+  position: initial;
+}
+
+body .content .container .contact {
+  width: 75%;
+  border: 2px solid #d02746;
+  border-radius: 8px;
+  background-color: rgba(251, 173, 134, 0.4);
+  margin: auto;
+  margin-top: 140px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+body .content .container .contact .contact1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  bottom: 20px;
+  font-family: Lobster Two;
+  font-size: 20px;
+}
+
+body .content .container .contact p {
+  padding-right: 5px;
+  color: #4b0a34;
+}
+
+body .content .container .contact .contact2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  bottom: 20px;
+  font-family: Lobster Two;
+  font-size: 18px;
 }
