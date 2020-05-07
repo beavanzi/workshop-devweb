@@ -34,7 +34,7 @@ body .content .container .title {
   align-items: center;
   text-align: center;
   text-transform: capitalize;
-  font-feature-settings: "fina"on, "liga"off;
+  font-feature-settings: "fina" on, "liga" off;
   margin-bottom: -30px;
   color: #d02746;
   text-shadow: -5px 3px 0px #fbad86;
@@ -52,7 +52,7 @@ body .content .container .sub-title {
   align-items: center;
   text-align: center;
   text-transform: capitalize;
-  font-feature-settings: "fina"on, "liga"off;
+  font-feature-settings: "fina" on, "liga" off;
   color: #996f6f;
   text-shadow: -3px 2px 0px #fbad86;
 }
@@ -79,7 +79,7 @@ body .content .container .card {
   margin-top: 20px;
 }
 
-.carousel-wrapper {
+body .content .container .carousel-wrapper {
   height: 400px;
   position: relative;
   width: 100%;
@@ -95,7 +95,7 @@ body .content .container .card {
   border-radius: 15px;
   box-shadow: 5px 8px #fbad86;
   display: flex;
-  width: 750px;
+  max-width: 750px;
   position: absolute;
   padding: 25px 50px;
   opacity: 0;
@@ -110,8 +110,8 @@ body .content .container .card {
 
 .cake {
   border-radius: 4px;
-  width: 230px;
-  height: 310px;
+  max-width: 230px;
+  max-height: 310px;
 }
 
 .cake-title {
@@ -148,16 +148,22 @@ body .content .container .card {
   transform: translateY(-50%) rotate(-45deg);
 }
 
-/* @media (max-width: 480px) {
-
-  .arrow,
+@media (max-width: 1220px) {
+  /* .arrow,
   .light .arrow {
     background-size: 10px;
     background-position: 10px 50%;
+  } */
+  body .content .container .carousel-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
   }
-} */
+  .text {
+    margin: 0px 10px;
+  }
+}
 
-/*Select every element*/
+/* Select every element */
 [id^="item"] {
   display: none;
 }
@@ -167,16 +173,16 @@ body .content .container .card {
   opacity: 1;
 }
 
-*:target~.item-1 {
+*:target ~ .item-1 {
   opacity: 0;
 }
 
-#item-1:target~.item-1 {
+#item-1:target ~ .item-1 {
   opacity: 1;
 }
 
-#item-2:target~.item-2,
-#item-3:target~.item-3 {
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3 {
   z-index: 3;
   opacity: 1;
 }
