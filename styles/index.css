@@ -1,28 +1,29 @@
 body .content {
   padding-left: 160px;
   display: flex;
-  /* height: 100%; */
   background-color: #feecd6;
+  min-height: 100vh;
 }
 
 body .content .container {
   background-color: rgba(51, 143, 142, 0.15);
-  /* align-self: center; */
   width: 80%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
 }
 
-body .content .container .container-background {
+body .content .container .header {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
-body .content .container .title {
+body .content .container .header .title {
   font-family: "Cookie";
   font-size: 150px;
   font-family: Cookie;
@@ -30,17 +31,15 @@ body .content .container .title {
   font-weight: normal;
   font-size: 150px;
   line-height: 166px;
-  display: flex;
-  align-items: center;
   text-align: center;
-  text-transform: capitalize;
-  font-feature-settings: "fina" on, "liga" off;
+  /* text-transform: capitalize; */
+  /* font-feature-settings: "fina" on, "liga" off; */
   margin-bottom: -30px;
   color: #d02746;
   text-shadow: -5px 3px 0px #fbad86;
 }
 
-body .content .container .sub-title {
+body .content .container .header .sub-title {
   font-family: "Cookie";
   font-size: 50px;
   font-family: Cookie;
@@ -48,11 +47,9 @@ body .content .container .sub-title {
   font-weight: normal;
   font-size: 50px;
   line-height: 55px;
-  display: flex;
-  align-items: center;
   text-align: center;
-  text-transform: capitalize;
-  font-feature-settings: "fina" on, "liga" off;
+  /* text-transform: capitalize; */
+  /* font-feature-settings: "fina" on, "liga" off; */
   color: #996f6f;
   text-shadow: -3px 2px 0px #fbad86;
 }
@@ -69,10 +66,9 @@ body .content .container .card {
   line-height: 25px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
-
   color: #feecd6;
-
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
   padding: 25px 46px 25px 46px;
   width: 80%;
@@ -86,7 +82,7 @@ body .content .container .carousel-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px auto;
+  margin: 18px auto;
 }
 
 .carousel-item {
@@ -95,9 +91,10 @@ body .content .container .carousel-wrapper {
   border-radius: 15px;
   box-shadow: 5px 8px #fbad86;
   display: flex;
+  align-items: center;
   max-width: 750px;
   position: absolute;
-  padding: 25px 50px;
+  padding: 20px 50px;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -149,12 +146,7 @@ body .content .container .carousel-wrapper {
 }
 
 @media (max-width: 1220px) {
-  /* .arrow,
-  .light .arrow {
-    background-size: 10px;
-    background-position: 10px 50%;
-  } */
-  body .content .container .carousel-wrapper {
+  .carousel-wrapper {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -185,59 +177,4 @@ body .content .container .carousel-wrapper {
 #item-3:target ~ .item-3 {
   z-index: 3;
   opacity: 1;
-}
-
-body .content .container .contact .contact-title {
-  background-color: #d02746;
-  border-radius: 12px;
-  display: inline-block;
-  padding: 2px 20px;
-  margin: 0px 90px 10px 20px;
-  position: relative;
-  bottom: 30px;
-}
-
-body .content .container .contact h2 {
-  font-family: Cookie;
-  font-size: 40px;
-  color: #feecd6;
-  position: initial;
-}
-
-body .content .container .contact {
-  width: 75%;
-  border: 2px solid #d02746;
-  border-radius: 8px;
-  background-color: rgba(251, 173, 134, 0.4);
-  margin: auto;
-  margin-top: 140px;
-  margin-bottom: 20px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-}
-
-body .content .container .contact .contact1 {
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  position: relative;
-  bottom: 20px;
-  font-family: Lobster Two;
-  font-size: 20px;
-}
-
-body .content .container .contact p {
-  padding-right: 5px;
-  color: #4b0a34;
-}
-
-body .content .container .contact .contact2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 20px;
-  font-family: Lobster Two;
-  font-size: 18px;
 }
