@@ -2,6 +2,7 @@ body .content {
   padding-left: 160px;
   display: flex;
   background-color: #feecd6;
+  min-height: 100vh;
 }
 
 body .content .container {
@@ -84,12 +85,13 @@ body .content .container .carousel-wrapper {
   margin: 18px auto;
 }
 
-body .content .container .carousel-item {
+.carousel-item {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   background-color: #4b0a34;
   border-radius: 15px;
   box-shadow: 5px 8px #fbad86;
   display: flex;
+  align-items: center;
   max-width: 750px;
   position: absolute;
   padding: 20px 50px;
@@ -144,11 +146,6 @@ body .content .container .carousel-item {
 }
 
 @media (max-width: 1220px) {
-  /* .arrow,
-  .light .arrow {
-    background-size: 10px;
-    background-position: 10px 50%;
-  } */
   .carousel-wrapper {
     margin-left: 20px;
     margin-right: 20px;
@@ -180,59 +177,4 @@ body .content .container .carousel-item {
 #item-3:target ~ .item-3 {
   z-index: 3;
   opacity: 1;
-}
-
-body .content .container .contact .contact-title {
-  background-color: #d02746;
-  border-radius: 12px;
-  display: inline-block;
-  padding: 2px 20px;
-  margin: 0px 90px 10px 20px;
-  position: relative;
-  bottom: 30px;
-}
-
-body .content .container .contact h2 {
-  font-family: Cookie;
-  font-size: 40px;
-  color: #feecd6;
-  position: initial;
-}
-
-body .content .container .contact {
-  width: 75%;
-  border: 2px solid #d02746;
-  border-radius: 8px;
-  background-color: rgba(251, 173, 134, 0.4);
-  margin: auto;
-  margin-top: 140px;
-  margin-bottom: 20px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-}
-
-body .content .container .contact .contact1 {
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  position: relative;
-  bottom: 20px;
-  font-family: Lobster Two;
-  font-size: 20px;
-}
-
-body .content .container .contact p {
-  padding-right: 5px;
-  color: #4b0a34;
-}
-
-body .content .container .contact .contact2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 20px;
-  font-family: Lobster Two;
-  font-size: 18px;
 }
