@@ -76,16 +76,12 @@ body .content .bg2-container .card {
 }
 
 body .content .bg2-container .carousel-wrapper {
-  height: 400px;
-  position: relative;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 18px auto;
+  margin: 20px auto;
 }
 
-body .content .container .carousel-wrapper .carousel-item {
+body .content .bg2-container .carousel-wrapper .carousel-item {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   background-color: #4b0a34;
   border-radius: 15px;
@@ -93,6 +89,8 @@ body .content .container .carousel-wrapper .carousel-item {
   box-shadow: 5px 8px #fbad86;
   width: 750px;
   padding: 20px 50px;
+  width: 790px !important;
+  margin: 0px 77px;
   /* transition: all 0.5s ease-in-out; */
 }
 
@@ -129,15 +127,18 @@ body .content .container .carousel-wrapper .carousel-item {
 }
 
 .slick-prev {
-  background: url("../assets/previous.svg");
+  background: url("../assets/previous.svg") no-repeat;
+  border: none;
+  font-size: 0px;
   /* left: -30px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(135deg); */
 }
 
-.slick-next {
+button.slick-next {
   background: url("../assets/next.svg");
+  height: 100%;
   /* right: -30px;
   position: absolute;
   top: 50%;
