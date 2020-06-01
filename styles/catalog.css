@@ -4,7 +4,7 @@ body .content {
   background-color: #feecd6;
 }
 
-body .content .container {
+body .content .bg2-container {
   background-color: rgba(51, 143, 142, 0.15);
   width: 80%;
   height: 100%;
@@ -12,11 +12,11 @@ body .content .container {
   box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
 }
 
-body .content .container .header img {
+body .content .bg2-container .header img {
   margin: 10px 0px 20px 30px;
 }
 
-body .content .container .header h1 {
+body .content .bg2-container .header h1 {
   font-family: Cookie;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@ body .content .container .header h1 {
   margin-top: 30px;
 }
 
-body .content .container .catalog-content .catalog-titles {
+body .content .bg2-container .catalog-content .catalog-titles {
   background-color: #d02746;
   border-radius: 12px;
   display: inline-block;
@@ -41,14 +41,14 @@ body .content .container .catalog-content .catalog-titles {
   top: 44px;
 }
 
-body .content .container .catalog-content h2 {
+body .content .bg2-container .catalog-content h2 {
   font-family: Cookie;
   font-size: 40px;
   color: #feecd6;
   position: initial;
 }
 
-body .content .container .catalog-content .card-wrap {
+body .content .bg2-container .catalog-content .card-wrap {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -59,20 +59,20 @@ body .content .container .catalog-content .card-wrap {
   background-color: rgba(251, 173, 134, 0.4);
 }
 
-body .content .container .catalog-content .card-wrap .card {
+body .content .bg2-container .catalog-content .card-wrap .card {
   background-color: rgba(51, 143, 142, 0.8);
   margin: 20px 10px;
   border-radius: 15px;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 }
 
-body .content .container .catalog-content .card-wrap .card p {
+body .content .bg2-container .catalog-content .card-wrap .card p {
   margin: 10px 10px 10px 13px;
   font-family: Lobster Two;
   color: #feecd6;
 }
 
-body .content .container .catalog-content .card-wrap .card img {
+body .content .bg2-container .catalog-content .card-wrap .card img {
   width: 200px;
   height: 300px;
   margin: 5px;
